@@ -50,8 +50,6 @@ int main(void)
   LED2_Init();
   /* turn the LED on */
   LED2_On();
-  BSP_LED_Init(LED2); 
-  BSP_LED_Init(LED1); 
 
   /* turn the LED on */
     BSP_LED_On(LED2);
