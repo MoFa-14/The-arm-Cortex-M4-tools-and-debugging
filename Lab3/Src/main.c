@@ -51,10 +51,6 @@ int main(void)
   /* turn the LED on */
   LED2_On();
 
-  /* turn the LED on */
-    BSP_LED_On(LED2);
-    BSP_LED_On(LED1);
-
     /* loop for ever */
     while (1)
       {
