@@ -46,11 +46,10 @@ int main(void)
   SystemClock_Config();
 
   /* Configure the User LED */
-<<<<<<< HEAD
+
   LED2_Init();
   /* turn the LED on */
   LED2_On();
-=======
   BSP_LED_Init(LED2); 
   BSP_LED_Init(LED1); 
 
@@ -58,7 +57,6 @@ int main(void)
     BSP_LED_On(LED2);
     BSP_LED_On(LED1);
 
->>>>>>> bd94e3207a170b1fc6d2fcff38a6f7820c63f9be
     /* loop for ever */
     while (1)
       {
