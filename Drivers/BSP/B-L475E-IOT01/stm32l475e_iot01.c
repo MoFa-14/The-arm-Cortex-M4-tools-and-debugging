@@ -54,23 +54,19 @@
   * @{
   */
 
-<<<<<<< HEAD
-=======
+
 const uint32_t GPIO_PIN[LED2n] = {LED2_PIN};
 const uint32_t GPIO_PIN[LED1n] = {LED1_PIN};
->>>>>>> bd94e3207a170b1fc6d2fcff38a6f7820c63f9be
 
 const uint32_t GPIO_PIN[LED1] = {LED1_PIN};
                GPIO_PIN[LED2] = {LED2_PIN};
 
-<<<<<<< HEAD
 GPIO_TypeDef* GPIO_PORT[LED1] = {LED1_GPIO_PORT};
               GPIO_PORT[LED2] = {LED2_GPIO_PORT};
-=======
+
 GPIO_TypeDef* GPIO_PORT[LED2n] = {LED2_GPIO_PORT};
 GPIO_TypeDef* GPIO_PORT[LED1n] = {LED1_GPIO_PORT};
 
->>>>>>> bd94e3207a170b1fc6d2fcff38a6f7820c63f9be
 
 GPIO_TypeDef* BUTTON_PORT[BUTTONn] = {USER_BUTTON_GPIO_PORT};
 
