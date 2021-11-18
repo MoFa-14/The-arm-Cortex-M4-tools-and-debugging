@@ -11,7 +11,6 @@
   */
 
 #include "main.h"
-#include <stdio.h>
 
 //declaration for the GPIO pins for the LED
 
