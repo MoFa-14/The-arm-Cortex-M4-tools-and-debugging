@@ -6,8 +6,7 @@ ELF=demo.elf
 
 OBJS= $(STARTUP)  $(HAL_OBJS)  main.o
 
-HAL_OBJS= stm32l4xx_hal.o stm32l4xx_hal_rcc.o stm32l4xx_hal_rcc_ex.o stm32l4xx_hal_cortex.o stm32l4xx_hal_pwr.o stm32l4xx_hal_pwr_ex.o stm32l4xx_hal_dfsdm.o stm32l4xx_hal_gpio.o \
-stm32l4xx_hal_flash.o stm32l4xx_hal_flash_ex.o stm32l4xx_hal_flash_ramfunc.o
+HAL_OBJS= stm32l4xx_hal.o stm32l4xx_hal_rcc.o stm32l4xx_hal_rcc_ex.o stm32l4xx_hal_cortex.o stm32l4xx_hal_pwr.o stm32l4xx_hal_pwr_ex.o stm32l4xx_hal_gpio.o 
 
 # Tool path
 
@@ -58,7 +57,7 @@ CFLAGS  = -O0 -g
 FULLASSERT = -DUSE_FULL_ASSERT 
 
 #not sure about last 2 vfp flags? Also not sure about interwork or PTYPE -mfloat-abi=hard -mfpu=fpv4-sp-d16
-LDFLAGS+= -T$(LDSCRIPT) -mthumb -mcpu=cortex-m4 
+LDFLAGS+= -T$(LDSCRIPT) -mthumb -mcpu=cortex-m4 -nolibc -nostdlib
 CFLAGS+= -mcpu=cortex-m4 -mthumb -D$(BOARD) -D$(BOARDTYPE) -D$(PTYPE)
 CFLAGS+= -I$(APP)/Inc -I$(HAL)/Inc -I$(CMSIS)/Include -I$(Common_BSP)  -I$(DEVICE) 
 CFLAGS+=  -DUSE_USB_OTG_FS  -D$(BOARD) -DUSE_STDPERIPH_DRIVER $(FULLASSERT)
