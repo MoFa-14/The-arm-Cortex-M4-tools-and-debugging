@@ -10,7 +10,7 @@ HAL_OBJS= stm32l4xx_hal.o stm32l4xx_hal_rcc.o stm32l4xx_hal_rcc_ex.o stm32l4xx_h
 
 # Tool path
 
-TOOLROOT		=/opt/gcc-arm-none-eabi/bin
+TOOLROOT		=/opt/gcc-arm-none-eabi/bin/arm-none-eabi-gcc/
 
 # Library path
 
